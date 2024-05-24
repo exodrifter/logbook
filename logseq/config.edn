@@ -311,7 +311,7 @@
 
  ;; Create a page for all properties.
  ;; Default value: true
- :property-pages/enabled? true
+ :property-pages/enabled? false
 
  ;; Properties to exclude from having property pages
  ;; Example usage:
@@ -418,5 +418,8 @@
  :feature/enable-whiteboards? false
  :feature/enable-flashcards? false
  :graph/settings {:journal? true
- :builtin-pages? true
- :excluded-pages? true}}
+ :builtin-pages? false
+ :excluded-pages? false
+ :orphan-pages? false}
+ :feature/enable-timetracking? false
+ :publishing/all-pages-public? true}
